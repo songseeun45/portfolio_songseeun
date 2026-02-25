@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=800px">
+	<title>cardnews</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="title">
+			<h2>웰니스 관광</h2>
+			<p>
+				'웰니스 관광'이라는 주제를, 쉽고 직관적으로 전달하고 이해할 수 있도록 
+				<br>시원하고 푸른 계열의 색상과 일러스트 이미지를 활용하여, '편안함''재충전'의 가치를 효과적으로 전달하자고 했습니다.
+			</p>
+		</div>
+		<div id="cardnews_wrap">
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/웰니스1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/웰니스2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/웰니스3.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/웰니스4.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fixed2">
+			<a href="../index.html#projects" onclick="window.close()"><img src="images/back2.png" alt="back"></a>
+		</div>
+	</div>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			grabCursor: true,
+			effect: "creative",
+			creativeEffect: {
+				prev: {
+					shadow: true,
+					translate: [0, 0, -400],
+				},
+				next: {
+					translate: ["100%", 0, 0],
+				},
+			},
+		});
+	</script>
+
+</body>
+
+</html>
